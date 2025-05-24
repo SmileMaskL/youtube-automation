@@ -136,7 +136,7 @@ env.bak/
 venv.bak/
 
 # ----- 여기에 새 규칙 추가 -----
-# Secrets and sensitive data
+# Secrets and sensitive data(보안 관련 섹션)
 *.json
 *.env
 /secrets/
@@ -146,7 +146,7 @@ venv.bak/
 credentials/
 service-account-key*.json
 
-# Python runtime artifacts
+# Python runtime artifacts(Python 실행 파일 섹션과 병합)
 *.py[cod]
 *$py.class
 
