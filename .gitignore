@@ -128,6 +128,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+.env
 .venv
 env/
 venv/
@@ -137,16 +138,17 @@ venv.bak/
 
 # ----- 여기에 새 규칙 추가 -----
 # Secrets and sensitive data(보안 관련 섹션)
-*.json
-*.env
-/secrets/
+*.json # 모든 JSON 파일 (주의: 필요한 경우만 사용)
+*.env # 환경 변수 파일
+/secrets/ # 비밀 폴더
 *.pem
 *.key
 *.cert
 credentials/
-service-account-key*.json
+service-account-key*.json # GCP 서비스 계정 키
 
 # Python runtime artifacts(Python 실행 파일 섹션과 병합)
+__pycache__/
 *.py[cod]
 *$py.class
 
